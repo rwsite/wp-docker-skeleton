@@ -20,7 +20,7 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define('DB_NAME', 'site');
+define('DB_NAME', 'wp_site');
 
 /** Имя пользователя MySQL */
 define('DB_USER', 'root');
@@ -72,9 +72,6 @@ define('WP_MEMORY_LIMIT', '64M');
 define('WP_MAX_MEMORY_LIMIT', '256M');
 define('ENFORCE_GZIP', true);
 
-/* Default theme */
-define('WP_DEFAULT_THEME', 'Blog theme');
-
 
 $domain = 'site.local';
 $httpHost = $_SERVER['HTTP_HOST'] ?? $domain;
@@ -90,7 +87,6 @@ if (isset($_SERVER['HTTP_HOST'])) {
 /*define('WP_REDIS_HOST', 'redis-7.2');
 define('WP_REDIS_PORT', '6379');
 define('WP_REDIS_PREFIX', 'rwsire_');*/
-
 
 /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
