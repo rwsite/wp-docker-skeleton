@@ -1,6 +1,6 @@
 {
   "name": "alex/rwsite",
-  "description": "Wordpress blog",
+  "description": "Wordpress site",
   "type": "project",
   "authors": [
     {
@@ -47,6 +47,7 @@
     "roots/wp-password-bcrypt": "1.2.0",
     "wpackagist-theme/twentytwentyfive": "^1.0",
     "rwsite/wp-limit-login-attempts-plugin": "*",
+    "codestar/codestar-framework": "*",
     "rwsite/wp-addon-plugin": "*"
   },
   "require-dev": {
