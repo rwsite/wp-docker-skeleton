@@ -1,0 +1,78 @@
+{
+  "name": "alex/rwsite",
+  "description": "Wordpress blog",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Aleksei Tikhomirov",
+      "homepage": "https://rwsite.ru/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "url": "git@github.com:rwsite/wp-term-thumbnail-plugin.git",
+      "type": "vcs"
+    },
+    {
+      "url": "git@github.com:rwsite/wp-addon-plugin.git",
+      "type": "vcs"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "codestar/codestar-framework",
+        "version": "2.3.1",
+        "type": "wordpress-plugin",
+        "source": {
+          "url": "https://github.com/Codestar/codestar-framework.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "codestar/codestar-framework": "^2.3.1",
+    "wpackagist-plugin/kama-spamblock": "^1.8",
+    "wpackagist-plugin/redis-cache": "^2.5",
+    "rwsite/wp-term-thumbnail-plugin": "dev-master",
+    "rwsite/wp-addon-plugin": "dev-main",
+    "roots/wordpress": "dev-main"
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "wpackagist-plugin/loco-translate": "^2.6"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "wp"
+  },
+  "wordpress-install-dir": "wp",
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "github-oauth": {
+    "github.com": ""
+  }
+}
