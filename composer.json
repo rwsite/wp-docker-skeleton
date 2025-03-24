@@ -18,7 +18,7 @@
       ]
     },
     {
-      "url": "git@github.com:rwsite/wp-term-thumbnail-plugin.git",
+      "url": "git@github.com:rwsite/wp-limit-login-attempts-plugin.git",
       "type": "vcs"
     },
     {
@@ -40,17 +40,19 @@
     }
   ],
   "require": {
-    "codestar/codestar-framework": "^2.3.1",
-    "wpackagist-plugin/kama-spamblock": "^1.8",
-    "wpackagist-plugin/redis-cache": "^2.5",
-    "rwsite/wp-term-thumbnail-plugin": "dev-master",
-    "rwsite/wp-addon-plugin": "dev-main",
-    "roots/wordpress": "dev-main"
+    "php": ">=8.1",
+    "composer/installers": "^2.2",
+    "roots/wordpress": "6.7.2",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.2.0",
+    "wpackagist-theme/twentytwentyfive": "^1.0",
+    "rwsite/wp-limit-login-attempts-plugin": "*",
+    "rwsite/wp-addon-plugin": "*"
   },
-  "minimum-stability": "dev",
   "require-dev": {
     "wpackagist-plugin/loco-translate": "^2.6"
   },
+  "minimum-stability": "dev",
   "extra": {
     "installer-paths": {
       "wp-content/mu-plugins/{$name}/": [

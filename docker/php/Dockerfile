@@ -3,9 +3,6 @@ FROM php:8.3-fpm
 
 MAINTAINER Alseksei Tikhomirov <alex@rwsite.ru>
 
-# Устанавливаем зависимости PHP
-FROM php:8.3-fpm
-
 # Устанавливаем необходимые расширения PHP
 RUN apt-get update && apt-get install -y \
     libzip-dev \
@@ -16,12 +13,34 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     unzip \
     git \
+    curl \
+    zip \
+    libxslt1-dev \
+    libicu-dev \
+    libpq-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd zip pdo pdo_mysql mbstring xml \
+    && docker-php-ext-install \
+        gd \
+        zip \
+        pdo \
+        pdo_mysql \
+        pdo_pgsql \
+        mysqli \
+        mbstring \
+        xml \
+        dom \
+        exif \
+        intl \
+        opcache \
+        simplexml \
+        xsl \
     && rm -rf /var/lib/apt/lists/*
 
 # Устанавливаем Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Add Composer to the PATH
+ENV PATH="$PATH:/usr/local/bin"
 
 # Указываем рабочую директорию для PHP
 WORKDIR /var/www
@@ -44,4 +63,6 @@ USER ${WWWUSER:-1000}
 
 # Открываем порт 9000 и запускаем PHP-FPM
 EXPOSE 9000
+
+# Запускаем PHP-FPM
 CMD ["php-fpm"]

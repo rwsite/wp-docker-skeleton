@@ -1,7 +1,7 @@
 services:
   nginx:
     image: nginx:latest
-    container_name: rwsite-nginx
+    container_name: wp_site-nginx
     ports:
       - "80:80"
       - "443:443"
@@ -14,72 +14,60 @@ services:
     depends_on:
       - php
     networks:
-      - rwsite-network
+      - wp_site-network
 
   php:
     build: ./docker/php
-    container_name: rwsite-php
+    container_name: wp_site-php
     volumes:
       - .:/var/www
       - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini:cached
     networks:
-      - rwsite-network
-
-  ftp:
-    image: docker.io/delfer/alpine-ftp-server
-    container_name: rwsite-ftp
-    environment:
-      USERS: rwsite|rwsite
-      ADDRESS: ftp
-    volumes:
-      - .:/var/www
-    networks:
-      - rwsite-network
+      - wp_site-network
 
   mysql:
     image: mysql:8.0
-    container_name: rwsite-mysql
+    container_name: wp_site-mysql
     volumes:
       - ./docker/mysql:/var/lib/mysql # Монтируем локальную директорию для хранения данных MySQL
     ports:
       - "7081:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=rwsite
+      - MYSQL_DATABASE=wp_site
       - MYSQL_USER=mysql
       - MYSQL_PASSWORD=mysql
       - TZ=Europe/Moscow
     networks:
-      - rwsite-network
+      - wp_site-network
 
   redis:
     image: redis:latest
-    container_name: rwsite-redis
+    container_name: wp_site-redis
     ports:
       - "6379:6379"
     networks:
-      - rwsite-network
+      - wp_site-network
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: rwsite-phpmyadmin
+    container_name: wp_site-phpmyadmin
     environment:
-      - PMA_HOST=rwsite-mysql
+      - PMA_HOST=wp_site-mysql
       - PMA_PORT=3306
-    restart: always
     ports:
       - "7083:80"
     networks:
-      - rwsite-network
+      - wp_site-network
 
   adminer:
     image: adminer
-    container_name: blog-adminer
+    container_name: wp_site-adminer
     ports:
       - "7082:8080"
     networks:
-      - rwsite-network
+      - wp_site-network
 
 networks:
-  rwsite-network:
+  wp_site-network:
     driver: bridge

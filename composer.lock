@@ -1,0 +1,573 @@
+{
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "32eecb074806bdcbdbde841e1369e885",
+  "packages": [
+    {
+      "name": "composer/installers",
+      "version": "dev-main",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/composer/installers.git",
+        "reference": "5b390889ecbb17bfa69ed5a030fa2e6075a19ba0"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/composer/installers/zipball/5b390889ecbb17bfa69ed5a030fa2e6075a19ba0",
+        "reference": "5b390889ecbb17bfa69ed5a030fa2e6075a19ba0",
+        "shasum": ""
+      },
+      "require": {
+        "composer-plugin-api": "^1.0 || ^2.0",
+        "php": "^7.2 || ^8.0"
+      },
+      "require-dev": {
+        "composer/composer": "^1.10.27 || ^2.7.8",
+        "composer/semver": "^1.7.2 || ^3.4.2",
+        "phpstan/phpstan": "^1.11.11",
+        "phpstan/phpstan-phpunit": "^1.4",
+        "phpunit/phpunit": "^8.5.39 || ^9.6.20",
+        "symfony/process": "^5 || ^6 || ^7.1.3"
+      },
+      "default-branch": true,
+      "type": "composer-plugin",
+      "extra": {
+        "class": "Composer\\Installers\\Plugin",
+        "branch-alias": {
+          "dev-main": "2.x-dev"
+        },
+        "plugin-modifies-install-path": true
+      },
+      "autoload": {
+        "psr-4": {
+          "Composer\\Installers\\": "src/Composer/Installers"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Kyle Robinson Young",
+          "email": "kyle@dontkry.com",
+          "homepage": "https://github.com/shama"
+        }
+      ],
+      "description": "A multi-framework Composer library installer",
+      "keywords": [
+        "Dolibarr",
+        "Eliasis",
+        "Hurad",
+        "ImageCMS",
+        "Kanboard",
+        "Lan Management System",
+        "MODX Evo",
+        "MantisBT",
+        "Mautic",
+        "Maya",
+        "OXID",
+        "Plentymarkets",
+        "Porto",
+        "RadPHP",
+        "SMF",
+        "Starbug",
+        "Thelia",
+        "Whmcs",
+        "WolfCMS",
+        "agl",
+        "annotatecms",
+        "attogram",
+        "bitrix",
+        "cakephp",
+        "chef",
+        "cockpit",
+        "codeigniter",
+        "concrete5",
+        "concreteCMS",
+        "croogo",
+        "dokuwiki",
+        "drupal",
+        "eZ Platform",
+        "elgg",
+        "expressionengine",
+        "fuelphp",
+        "grav",
+        "installer",
+        "itop",
+        "known",
+        "kohana",
+        "laravel",
+        "lavalite",
+        "lithium",
+        "magento",
+        "majima",
+        "mako",
+        "matomo",
+        "mediawiki",
+        "miaoxing",
+        "modulework",
+        "modx",
+        "moodle",
+        "osclass",
+        "pantheon",
+        "phpbb",
+        "piwik",
+        "ppi",
+        "processwire",
+        "puppet",
+        "pxcms",
+        "reindex",
+        "roundcube",
+        "shopware",
+        "silverstripe",
+        "sydes",
+        "sylius",
+        "tastyigniter",
+        "wordpress",
+        "yawik",
+        "zend",
+        "zikula"
+      ],
+      "support": {
+        "issues": "https://github.com/composer/installers/issues",
+        "source": "https://github.com/composer/installers/tree/main"
+      },
+      "funding": [
+        {
+          "url": "https://packagist.com",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/composer",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2024-11-26T13:24:01+00:00"
+    },
+    {
+      "name": "roots/wordpress",
+      "version": "6.7.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/roots/wordpress.git",
+        "reference": "c53e4173d239dcaf8889f9f84c0b827a0cf643e9"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/roots/wordpress/zipball/c53e4173d239dcaf8889f9f84c0b827a0cf643e9",
+        "reference": "c53e4173d239dcaf8889f9f84c0b827a0cf643e9",
+        "shasum": ""
+      },
+      "require": {
+        "roots/wordpress-core-installer": "^1.0.0",
+        "roots/wordpress-no-content": "self.version"
+      },
+      "type": "metapackage",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT",
+        "GPL-2.0-or-later"
+      ],
+      "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+      "homepage": "https://wordpress.org/",
+      "keywords": [
+        "blog",
+        "cms",
+        "wordpress"
+      ],
+      "support": {
+        "issues": "https://github.com/roots/wordpress/issues",
+        "source": "https://github.com/roots/wordpress/tree/6.7.2"
+      },
+      "funding": [
+        {
+          "url": "https://github.com/roots",
+          "type": "github"
+        }
+      ],
+      "time": "2024-12-15T16:32:37+00:00"
+    },
+    {
+      "name": "roots/wordpress-core-installer",
+      "version": "1.100.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/roots/wordpress-core-installer.git",
+        "reference": "73f8488e5178c5d54234b919f823a9095e2b1847"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/roots/wordpress-core-installer/zipball/73f8488e5178c5d54234b919f823a9095e2b1847",
+        "reference": "73f8488e5178c5d54234b919f823a9095e2b1847",
+        "shasum": ""
+      },
+      "require": {
+        "composer-plugin-api": "^1.0 || ^2.0",
+        "php": ">=5.6.0"
+      },
+      "conflict": {
+        "composer/installers": "<1.0.6"
+      },
+      "replace": {
+        "johnpbloch/wordpress-core-installer": "*"
+      },
+      "require-dev": {
+        "composer/composer": "^1.0 || ^2.0",
+        "phpunit/phpunit": ">=5.7.27"
+      },
+      "type": "composer-plugin",
+      "extra": {
+        "class": "Roots\\Composer\\WordPressCorePlugin"
+      },
+      "autoload": {
+        "psr-4": {
+          "Roots\\Composer\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "John P. Bloch",
+          "email": "me@johnpbloch.com"
+        },
+        {
+          "name": "Roots",
+          "email": "team@roots.io"
+        }
+      ],
+      "description": "A custom installer to handle deploying WordPress with composer",
+      "keywords": [
+        "wordpress"
+      ],
+      "support": {
+        "issues": "https://github.com/roots/wordpress-core-installer/issues",
+        "source": "https://github.com/roots/wordpress-core-installer/tree/master"
+      },
+      "funding": [
+        {
+          "url": "https://github.com/roots",
+          "type": "github"
+        },
+        {
+          "url": "https://www.patreon.com/rootsdev",
+          "type": "patreon"
+        }
+      ],
+      "time": "2020-08-20T00:27:30+00:00"
+    },
+    {
+      "name": "roots/wordpress-no-content",
+      "version": "6.7.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/WordPress/WordPress.git",
+        "reference": "6.7.2"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://downloads.wordpress.org/release/wordpress-6.7.2-no-content.zip",
+        "shasum": "c33ca276601dee0ddf1e80d3e66403929a696e63"
+      },
+      "require": {
+        "php": ">= 7.2.24"
+      },
+      "provide": {
+        "wordpress/core-implementation": "6.7.2"
+      },
+      "suggest": {
+        "ext-curl": "Performs remote request operations.",
+        "ext-dom": "Used to validate Text Widget content and to automatically configuring IIS7+.",
+        "ext-exif": "Works with metadata stored in images.",
+        "ext-fileinfo": "Used to detect mimetype of file uploads.",
+        "ext-hash": "Used for hashing, including passwords and update packages.",
+        "ext-imagick": "Provides better image quality for media uploads.",
+        "ext-json": "Used for communications with other servers.",
+        "ext-libsodium": "Validates Signatures and provides securely random bytes.",
+        "ext-mbstring": "Used to properly handle UTF8 text.",
+        "ext-mysqli": "Connects to MySQL for database interactions.",
+        "ext-openssl": "Permits SSL-based connections to other hosts.",
+        "ext-pcre": "Increases performance of pattern matching in code searches.",
+        "ext-xml": "Used for XML parsing, such as from a third-party site.",
+        "ext-zip": "Used for decompressing Plugins, Themes, and WordPress update packages."
+      },
+      "type": "wordpress-core",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "WordPress Community",
+          "homepage": "https://wordpress.org/about/"
+        }
+      ],
+      "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
+      "homepage": "https://wordpress.org/",
+      "keywords": [
+        "blog",
+        "cms",
+        "wordpress"
+      ],
+      "support": {
+        "docs": "https://developer.wordpress.org/",
+        "forum": "https://wordpress.org/support/",
+        "irc": "irc://irc.freenode.net/wordpress",
+        "issues": "https://core.trac.wordpress.org/",
+        "rss": "https://wordpress.org/news/feed/",
+        "source": "https://core.trac.wordpress.org/browser",
+        "wiki": "https://codex.wordpress.org/"
+      },
+      "funding": [
+        {
+          "url": "https://wordpressfoundation.org/donate/",
+          "type": "other"
+        }
+      ],
+      "time": "2025-02-11T16:29:31+00:00"
+    },
+    {
+      "name": "roots/wp-config",
+      "version": "1.0.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/roots/wp-config.git",
+        "reference": "37c38230796119fb487fa03346ab0706ce6d4962"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/roots/wp-config/zipball/37c38230796119fb487fa03346ab0706ce6d4962",
+        "reference": "37c38230796119fb487fa03346ab0706ce6d4962",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.6"
+      },
+      "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^5.7",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.3"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Roots\\WPConfig\\": "src"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Austin Pray",
+          "email": "austin@austinpray.com"
+        }
+      ],
+      "description": "Collect configuration values and safely define() them",
+      "support": {
+        "issues": "https://github.com/roots/wp-config/issues",
+        "source": "https://github.com/roots/wp-config/tree/master"
+      },
+      "time": "2018-08-10T14:18:38+00:00"
+    },
+    {
+      "name": "roots/wp-password-bcrypt",
+      "version": "1.2.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/roots/wp-password-bcrypt.git",
+        "reference": "bd26ab98aa646d88ce98c76e365d16259c5227a2"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/roots/wp-password-bcrypt/zipball/bd26ab98aa646d88ce98c76e365d16259c5227a2",
+        "reference": "bd26ab98aa646d88ce98c76e365d16259c5227a2",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.6.0"
+      },
+      "require-dev": {
+        "brain/monkey": "^2.6",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "mockery/mockery": "^1.4",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpunit/phpunit": "<= 9.3",
+        "squizlabs/php_codesniffer": "^3.5"
+      },
+      "type": "library",
+      "autoload": {
+        "files": [
+          "wp-password-bcrypt.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Scott Walkinshaw",
+          "email": "scott.walkinshaw@gmail.com",
+          "homepage": "https://github.com/swalkinshaw"
+        },
+        {
+          "name": "QWp6t",
+          "homepage": "https://github.com/qwp6t"
+        },
+        {
+          "name": "Brandon Nifong",
+          "homepage": "https://github.com/log1x"
+        },
+        {
+          "name": "Jan Pingel",
+          "email": "jpingel@bitpiston.com",
+          "homepage": "http://janpingel.com"
+        }
+      ],
+      "description": "WordPress plugin which replaces wp_hash_password and wp_check_password's phpass hasher with PHP 5.5's password_hash and password_verify using bcrypt.",
+      "homepage": "https://roots.io/plugins/wp-password-bcrypt",
+      "keywords": [
+        "bcrypt",
+        "passwords",
+        "wordpress"
+      ],
+      "support": {
+        "forum": "https://discourse.roots.io/",
+        "issues": "https://github.com/roots/wp-password-bcrypt/issues",
+        "source": "https://github.com/roots/wp-password-bcrypt/tree/1.2.0"
+      },
+      "funding": [
+        {
+          "url": "https://github.com/roots",
+          "type": "github"
+        }
+      ],
+      "time": "2024-09-10T23:11:22+00:00"
+    },
+    {
+      "name": "rwsite/wp-addon-plugin",
+      "version": "dev-main",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/rwsite/wp-addon-plugin.git",
+        "reference": "86f75b893eb829008f48ffc026fbe8a9ad09b5f4"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/rwsite/wp-addon-plugin/zipball/86f75b893eb829008f48ffc026fbe8a9ad09b5f4",
+        "reference": "86f75b893eb829008f48ffc026fbe8a9ad09b5f4",
+        "shasum": ""
+      },
+      "default-branch": true,
+      "type": "wordpress-plugin",
+      "license": [
+        "proprietary"
+      ],
+      "authors": [
+        {
+          "name": "Aleksei Tikhomirov",
+          "email": "alex@rwsite.ru"
+        }
+      ],
+      "description": "Massive Addon for WordPress;",
+      "support": {
+        "source": "https://github.com/rwsite/wp-addon-plugin/tree/1.2.1",
+        "issues": "https://github.com/rwsite/wp-addon-plugin/issues"
+      },
+      "time": "2025-03-20T22:11:37+00:00"
+    },
+    {
+      "name": "rwsite/wp-limit-login-attempts-plugin",
+      "version": "dev-main",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/rwsite/wp-limit-login-attempts-plugin.git",
+        "reference": "eedcb210768d34f2474a474324326dd998293d45"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/rwsite/wp-limit-login-attempts-plugin/zipball/eedcb210768d34f2474a474324326dd998293d45",
+        "reference": "eedcb210768d34f2474a474324326dd998293d45",
+        "shasum": ""
+      },
+      "default-branch": true,
+      "type": "wordpress-plugin",
+      "license": [
+        "proprietary"
+      ],
+      "authors": [
+        {
+          "name": "Aleksei Tikhomirov",
+          "email": "alex@rwsite.ru"
+        }
+      ],
+      "description": "WordPress Limit login attempts Plugin. Automatically blocked IP for many attempts login trys.",
+      "support": {
+        "source": "https://github.com/rwsite/wp-limit-login-attempts-plugin/tree/main",
+        "issues": "https://github.com/rwsite/wp-limit-login-attempts-plugin/issues"
+      },
+      "time": "2025-01-27T20:45:28+00:00"
+    },
+    {
+      "name": "wpackagist-theme/twentytwentyfive",
+      "version": "1.1",
+      "source": {
+        "type": "svn",
+        "url": "https://themes.svn.wordpress.org/twentytwentyfive/",
+        "reference": "1.1"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://downloads.wordpress.org/theme/twentytwentyfive.1.1.zip"
+      },
+      "require": {
+        "composer/installers": "^1.0 || ^2.0"
+      },
+      "type": "wordpress-theme",
+      "homepage": "https://wordpress.org/themes/twentytwentyfive/"
+    }
+  ],
+  "packages-dev": [
+    {
+      "name": "wpackagist-plugin/loco-translate",
+      "version": "2.7.1",
+      "source": {
+        "type": "svn",
+        "url": "https://plugins.svn.wordpress.org/loco-translate/",
+        "reference": "tags/2.7.1"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://downloads.wordpress.org/plugin/loco-translate.2.7.1.zip"
+      },
+      "require": {
+        "composer/installers": "^1.0 || ^2.0"
+      },
+      "type": "wordpress-plugin",
+      "homepage": "https://wordpress.org/plugins/loco-translate/"
+    }
+  ],
+  "aliases": [],
+  "minimum-stability": "dev",
+  "stability-flags": {},
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": {
+    "php": ">=8.1"
+  },
+  "platform-dev": {},
+  "plugin-api-version": "2.6.0"
+}

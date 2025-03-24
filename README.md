@@ -1,16 +1,20 @@
 # WordPress + Composer + Docker
 
-Skeleton
+Скелет для разработки wordpress сайтов.
+Включает в себя: phpmyadmin + mysql 8 + php + nginx
+WP и плагины и темы устанавливаются и управляются через composer.
 
 ## Install
 
 1. Установить через docker `docker-compose up -d `
-2. Поменять конфиг в корне из `wp-config.example.php` в `wp-config.php`
-3. Войти в контейнер: `docker-compose exec php bash`
-4. Запустить установку WordPress в php контейнере`composer install`
-5. Ввести Github token для установки приватных пакетов
+2. Войти в контейнер: `docker-compose exec php bash`
+3. Запустить установку WordPress в php контейнере`composer install`
+4. Ввести Github token для установки приватных пакетов
+5. Развернуть БД и конфиг `cp wp-config.example.php wp-config.php`
+   или выполнить установку с нуля: https://site.local/wp/wp-admin/install.php
 
-Домен по-умолчанию забинден домен `site.local` для доступа по нему, нужно добавить домен в файл hosts вашей ОС.
+Домен по-умолчанию забинден домен `localhost` или `site.local` для доступа по нему, нужно добавить домен в файл hosts
+вашей ОС.
 
 ### Для разработки плагинов с использованием submodules
 
@@ -53,4 +57,4 @@ _**Как работать с gulp**_
 ### Примечания:
 
 Создание ssl:   
-` openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./docker/nginx/ssl/selfsigned.key -out ./docker/nginx/ssl/selfsigned.crt`   
+` openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./docker/nginx/ssl/selfsigned.key -out ./docker/nginx/ssl/selfsigned.crt`  
